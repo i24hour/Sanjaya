@@ -1,0 +1,18 @@
+{
+  "name": "Sanjaya",
+  "short_name": "Sanjaya",
+  "description": "A coming data platform for India. Field collection, one governed record, and a picture clear enough to act on.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e100d",
+  "theme_color": "#0e100d",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
