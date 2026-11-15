@@ -250,6 +250,7 @@ h2 {
   text-decoration: none;
   color: var(--ivory-soft);
   font-size: 0.92rem;
+  white-space: nowrap;
 }
 
 .backing-lockup:hover {
@@ -778,9 +779,14 @@ h2 {
   border-color: rgba(255, 116, 72, 0.55);
 }
 
-.ef-logo {
-  width: min(100%, 440px);
-  height: auto;
+.backer-name {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--ivory);
 }
 
 .contact-for {
