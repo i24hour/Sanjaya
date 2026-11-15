@@ -142,6 +142,10 @@ h2 {
   text-wrap: balance;
 }
 
+#contact h2 {
+  font-family: var(--serif), var(--deva);
+}
+
 .section {
   position: relative;
   z-index: 1;
@@ -381,6 +385,7 @@ h2 {
   text-decoration: none;
   padding: 0.95rem 1.15rem 0.95rem 1.2rem;
   border: 1px solid var(--ivory);
+  font-family: var(--sans), var(--deva);
   font-size: 0.96rem;
   font-weight: 500;
   letter-spacing: -0.011em;
