@@ -17,13 +17,13 @@ git pull
 cd analysis
 pip install youtube-transcript-api pandas
 python fetch_transcripts.py --limit 20   # try 20 first
-python fetch_transcripts.py              # then the rest (~640 videos, roughly an hour)
+python fetch_transcripts.py              # then the rest; pauses by itself if YouTube blocks
 git add data/transcripts data/no_transcript.txt
 git commit -m "Add transcripts"
 git push
 ```
 
-If it stops with "YouTube is blocking you", wait an hour and run it again; finished videos are skipped.
+If YouTube blocks it, the script pauses and retries by itself, so leave it running (e.g. overnight). Ctrl+C is safe; finished videos are skipped next run.
 
 ## Output
 
