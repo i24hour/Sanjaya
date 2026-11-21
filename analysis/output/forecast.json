@@ -1,7 +1,7 @@
 {
   "next_episode": 591,
   "based_on_episodes": 564,
-  "episodes_with_transcript": 404,
+  "episodes_with_transcript": 417,
   "model": {
     "recent_weight": 0.8,
     "markov_weight": 0.0,
@@ -11,14 +11,14 @@
     "test_episodes": 120,
     "model": {
       "top1": 0.18333333333333332,
-      "top3": 0.36666666666666664,
-      "logloss": 2.361989307149665
+      "top3": 0.35833333333333334,
+      "logloss": 2.3617547968578583
     },
     "baselines": {
       "Always the most common topic so far": {
         "top1": 0.09166666666666666,
         "top3": 0.43333333333333335,
-        "logloss": 2.4087767497848125
+        "logloss": 2.4070702211294033
       },
       "Same topic as last episode": {
         "top1": 0.09166666666666666,
@@ -35,11 +35,11 @@
   "probabilities": [
     {
       "topic": "Psychology & Self-Growth",
-      "p": 0.214
+      "p": 0.2144
     },
     {
       "topic": "Business & Startups",
-      "p": 0.1221
+      "p": 0.1217
     },
     {
       "topic": "Health & Fitness",
@@ -51,7 +51,7 @@
     },
     {
       "topic": "Money & Investing",
-      "p": 0.1134
+      "p": 0.113
     },
     {
       "topic": "Tech & AI",
@@ -63,7 +63,7 @@
     },
     {
       "topic": "Entertainment & Celebrities",
-      "p": 0.041
+      "p": 0.0413
     },
     {
       "topic": "Crime & Dark Side",
