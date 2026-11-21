@@ -1,6 +1,6 @@
 # Raj Shamani: what's the next episode about?
 
-Based on 564 *Figuring Out* episodes (FO1 to FO590). Transcripts used for 256 of them; the rest are tagged from the title alone.
+Based on 564 *Figuring Out* episodes (FO1 to FO590). Transcripts used for 404 of them; the rest are tagged from the title alone.
 
 ## Forecast for FO591
 
@@ -22,7 +22,7 @@ Each of those episodes was predicted using only the episodes before it. Settings
 | Method | Right first guess | Right in top 3 |
 |---|---|---|
 | **This model** | **18%** | **37%** |
-| Always the most common topic so far | 9% | 42% |
+| Always the most common topic so far | 9% | 43% |
 | Same topic as last episode | 9% | 31% |
 | Random guess | 7% | 21% |
 
