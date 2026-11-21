@@ -1,7 +1,7 @@
 {
   "next_episode": 591,
   "based_on_episodes": 564,
-  "episodes_with_transcript": 159,
+  "episodes_with_transcript": 256,
   "model": {
     "recent_weight": 0.8,
     "markov_weight": 0.0,
@@ -10,15 +10,15 @@
   "backtest": {
     "test_episodes": 120,
     "model": {
-      "top1": 0.16666666666666666,
-      "top3": 0.35833333333333334,
-      "logloss": 2.3638939834893558
+      "top1": 0.175,
+      "top3": 0.36666666666666664,
+      "logloss": 2.362277433607559
     },
     "baselines": {
       "Always the most common topic so far": {
         "top1": 0.09166666666666666,
-        "top3": 0.4166666666666667,
-        "logloss": 2.414300683847569
+        "top3": 0.425,
+        "logloss": 2.4108911213231425
       },
       "Same topic as last episode": {
         "top1": 0.09166666666666666,
@@ -39,11 +39,11 @@
     },
     {
       "topic": "Business & Startups",
-      "p": 0.1243
+      "p": 0.1236
     },
     {
       "topic": "Health & Fitness",
-      "p": 0.1223
+      "p": 0.1208
     },
     {
       "topic": "Geopolitics & Defence",
@@ -51,11 +51,11 @@
     },
     {
       "topic": "Money & Investing",
-      "p": 0.1149
+      "p": 0.1141
     },
     {
       "topic": "Tech & AI",
-      "p": 0.0746
+      "p": 0.0753
     },
     {
       "topic": "Politics & Governance",
@@ -63,7 +63,7 @@
     },
     {
       "topic": "Entertainment & Celebrities",
-      "p": 0.0379
+      "p": 0.0394
     },
     {
       "topic": "Crime & Dark Side",
@@ -75,7 +75,7 @@
     },
     {
       "topic": "Sports",
-      "p": 0.0279
+      "p": 0.0287
     },
     {
       "topic": "Spirituality & Mysteries",
