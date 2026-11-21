@@ -1,6 +1,6 @@
 # Raj Shamani: what's the next episode about?
 
-Based on 564 *Figuring Out* episodes (FO1 to FO590). Transcripts used for 0 of them; the rest are tagged from the title alone.
+Based on 564 *Figuring Out* episodes (FO1 to FO590). Transcripts used for 19 of them; the rest are tagged from the title alone.
 
 ## Forecast for FO591
 
@@ -21,9 +21,9 @@ Each of those episodes was predicted using only the episodes before it. Settings
 
 | Method | Right first guess | Right in top 3 |
 |---|---|---|
-| **This model** | **12%** | **42%** |
+| **This model** | **12%** | **40%** |
 | Always the most common topic so far | 11% | 42% |
-| Same topic as last episode | 9% | 35% |
+| Same topic as last episode | 9% | 34% |
 | Random guess | 7% | 21% |
 
 Model settings: 65% recent trend (half-life 40 episodes), 0% what usually follows the last topic, rest all-time mix.
@@ -39,10 +39,10 @@ Model settings: 65% recent trend (half-life 40 episodes), 0% what usually follow
 | Tech & AI | 8% | 7% | +1 pts |
 | Politics & Governance | 6% | 6% | +0 pts |
 | Sports | 2% | 2% | +0 pts |
+| Education & Career | 2% | 3% | -1 pts |
 | History & Culture | 0% | 1% | -1 pts |
-| Health & Fitness | 14% | 16% | -2 pts |
-| Education & Career | 0% | 3% | -3 pts |
 | Entertainment & Celebrities | 0% | 4% | -4 pts |
+| Health & Fitness | 12% | 16% | -4 pts |
 | Business & Startups | 10% | 16% | -6 pts |
 | Money & Investing | 10% | 18% | -8 pts |
 
@@ -60,8 +60,8 @@ Model settings: 65% recent trend (half-life 40 episodes), 0% what usually follow
 | Money & Investing | 33 | 1.10M |
 | Business & Startups | 30 | 0.97M |
 | Entertainment & Celebrities | 11 | 0.82M |
-| Health & Fitness | 38 | 0.67M |
-| Education & Career | 4 | 0.52M |
+| Health & Fitness | 37 | 0.66M |
+| Education & Career | 5 | 0.60M |
 
 ## Topic mix of the last 15 episodes
 

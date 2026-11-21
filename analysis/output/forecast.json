@@ -1,7 +1,7 @@
 {
   "next_episode": 591,
   "based_on_episodes": 564,
-  "episodes_with_transcript": 0,
+  "episodes_with_transcript": 19,
   "model": {
     "recent_weight": 0.65,
     "markov_weight": 0.0,
@@ -11,18 +11,18 @@
     "test_episodes": 120,
     "model": {
       "top1": 0.11666666666666667,
-      "top3": 0.4166666666666667,
-      "logloss": 2.3252232327199507
+      "top3": 0.4,
+      "logloss": 2.3405406205821087
     },
     "baselines": {
       "Always the most common topic so far": {
         "top1": 0.10833333333333334,
-        "top3": 0.425,
-        "logloss": 2.3538625938318916
+        "top3": 0.4166666666666667,
+        "logloss": 2.3685114098114948
       },
       "Same topic as last episode": {
         "top1": 0.09166666666666666,
-        "top3": 0.35,
+        "top3": 0.3416666666666667,
         "logloss": 4.431001839765793
       },
       "Random guess": {
@@ -43,7 +43,7 @@
     },
     {
       "topic": "Health & Fitness",
-      "p": 0.1434
+      "p": 0.1352
     },
     {
       "topic": "Money & Investing",
@@ -70,12 +70,12 @@
       "p": 0.0375
     },
     {
-      "topic": "Sports",
-      "p": 0.0279
+      "topic": "Education & Career",
+      "p": 0.0304
     },
     {
-      "topic": "Education & Career",
-      "p": 0.0223
+      "topic": "Sports",
+      "p": 0.0279
     },
     {
       "topic": "Spirituality & Mysteries",
@@ -132,24 +132,24 @@
       "prior_share": 0.0
     },
     {
+      "topic": "Education & Career",
+      "recent_share": 0.02,
+      "prior_share": 0.03
+    },
+    {
       "topic": "History & Culture",
       "recent_share": 0.0,
       "prior_share": 0.01
     },
     {
-      "topic": "Health & Fitness",
-      "recent_share": 0.14,
-      "prior_share": 0.16
-    },
-    {
-      "topic": "Education & Career",
-      "recent_share": 0.0,
-      "prior_share": 0.03
-    },
-    {
       "topic": "Entertainment & Celebrities",
       "recent_share": 0.0,
       "prior_share": 0.04
+    },
+    {
+      "topic": "Health & Fitness",
+      "recent_share": 0.12,
+      "prior_share": 0.16
     },
     {
       "topic": "Business & Startups",
