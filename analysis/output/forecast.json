@@ -1,28 +1,28 @@
 {
   "next_episode": 591,
   "based_on_episodes": 564,
-  "episodes_with_transcript": 19,
+  "episodes_with_transcript": 159,
   "model": {
-    "recent_weight": 0.65,
+    "recent_weight": 0.8,
     "markov_weight": 0.0,
     "half_life_episodes": 40
   },
   "backtest": {
     "test_episodes": 120,
     "model": {
-      "top1": 0.11666666666666667,
-      "top3": 0.4,
-      "logloss": 2.3405406205821087
+      "top1": 0.16666666666666666,
+      "top3": 0.35833333333333334,
+      "logloss": 2.3638939834893558
     },
     "baselines": {
       "Always the most common topic so far": {
-        "top1": 0.10833333333333334,
+        "top1": 0.09166666666666666,
         "top3": 0.4166666666666667,
-        "logloss": 2.3685114098114948
+        "logloss": 2.414300683847569
       },
       "Same topic as last episode": {
         "top1": 0.09166666666666666,
-        "top3": 0.3416666666666667,
+        "top3": 0.30833333333333335,
         "logloss": 4.431001839765793
       },
       "Random guess": {
@@ -35,43 +35,43 @@
   "probabilities": [
     {
       "topic": "Psychology & Self-Growth",
-      "p": 0.1917
+      "p": 0.214
     },
     {
       "topic": "Business & Startups",
-      "p": 0.1493
+      "p": 0.1243
     },
     {
       "topic": "Health & Fitness",
-      "p": 0.1352
-    },
-    {
-      "topic": "Money & Investing",
-      "p": 0.1284
+      "p": 0.1223
     },
     {
       "topic": "Geopolitics & Defence",
-      "p": 0.1069
+      "p": 0.1177
+    },
+    {
+      "topic": "Money & Investing",
+      "p": 0.1149
     },
     {
       "topic": "Tech & AI",
-      "p": 0.0626
+      "p": 0.0746
     },
     {
       "topic": "Politics & Governance",
-      "p": 0.059
+      "p": 0.0645
     },
     {
       "topic": "Entertainment & Celebrities",
-      "p": 0.0393
+      "p": 0.0379
     },
     {
       "topic": "Crime & Dark Side",
-      "p": 0.0375
+      "p": 0.0366
     },
     {
       "topic": "Education & Career",
-      "p": 0.0304
+      "p": 0.031
     },
     {
       "topic": "Sports",
@@ -79,27 +79,27 @@
     },
     {
       "topic": "Spirituality & Mysteries",
-      "p": 0.016
+      "p": 0.0173
     },
     {
       "topic": "History & Culture",
-      "p": 0.0096
+      "p": 0.0102
     },
     {
       "topic": "Other",
-      "p": 0.0062
+      "p": 0.0068
     }
   ],
   "trend_last50_vs_prior100": [
     {
       "topic": "Psychology & Self-Growth",
-      "recent_share": 0.28,
-      "prior_share": 0.14
+      "recent_share": 0.3,
+      "prior_share": 0.16
     },
     {
       "topic": "Geopolitics & Defence",
       "recent_share": 0.16,
-      "prior_share": 0.12
+      "prior_share": 0.13
     },
     {
       "topic": "Crime & Dark Side",
@@ -112,16 +112,6 @@
       "prior_share": 0.0
     },
     {
-      "topic": "Tech & AI",
-      "recent_share": 0.08,
-      "prior_share": 0.07
-    },
-    {
-      "topic": "Politics & Governance",
-      "recent_share": 0.06,
-      "prior_share": 0.06
-    },
-    {
       "topic": "Sports",
       "recent_share": 0.02,
       "prior_share": 0.02
@@ -130,6 +120,11 @@
       "topic": "Other",
       "recent_share": 0.0,
       "prior_share": 0.0
+    },
+    {
+      "topic": "Tech & AI",
+      "recent_share": 0.08,
+      "prior_share": 0.09
     },
     {
       "topic": "Education & Career",
@@ -142,24 +137,29 @@
       "prior_share": 0.01
     },
     {
-      "topic": "Entertainment & Celebrities",
-      "recent_share": 0.0,
-      "prior_share": 0.04
-    },
-    {
-      "topic": "Health & Fitness",
-      "recent_share": 0.12,
-      "prior_share": 0.16
+      "topic": "Politics & Governance",
+      "recent_share": 0.06,
+      "prior_share": 0.07
     },
     {
       "topic": "Business & Startups",
       "recent_share": 0.1,
-      "prior_share": 0.16
+      "prior_share": 0.13
     },
     {
       "topic": "Money & Investing",
       "recent_share": 0.1,
-      "prior_share": 0.18
+      "prior_share": 0.15
+    },
+    {
+      "topic": "Health & Fitness",
+      "recent_share": 0.1,
+      "prior_share": 0.15
+    },
+    {
+      "topic": "Entertainment & Celebrities",
+      "recent_share": 0.0,
+      "prior_share": 0.05
     }
   ]
 }
