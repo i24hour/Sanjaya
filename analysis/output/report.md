@@ -1,17 +1,17 @@
 # Raj Shamani: what's the next episode about?
 
-Based on 564 *Figuring Out* episodes (FO1 to FO590). Transcripts used for 417 of them; the rest are tagged from the title alone.
+Based on 564 *Figuring Out* episodes (FO1 to FO590). Transcripts used for 553 of them; the rest are tagged from the title alone.
 
 ## Forecast for FO591
 
 | Topic | Probability |
 |---|---|
-| Psychology & Self-Growth | 21% |
-| Business & Startups | 12% |
-| Health & Fitness | 12% |
-| Geopolitics & Defence | 12% |
-| Money & Investing | 11% |
-| Tech & AI | 8% |
+| Psychology & Self-Growth | 20% |
+| Business & Startups | 14% |
+| Health & Fitness | 13% |
+| Money & Investing | 12% |
+| Geopolitics & Defence | 11% |
+| Tech & AI | 7% |
 
 Last episode: FO590, *How Brain Damage, Trauma & Infections Can Change Human Behaviour | Daniel Amen*, tagged **Health & Fitness**.
 
@@ -21,12 +21,12 @@ Each of those episodes was predicted using only the episodes before it. Settings
 
 | Method | Right first guess | Right in top 3 |
 |---|---|---|
-| **This model** | **18%** | **36%** |
-| Always the most common topic so far | 9% | 43% |
+| **This model** | **15%** | **39%** |
+| Always the most common topic so far | 9% | 42% |
 | Same topic as last episode | 9% | 31% |
 | Random guess | 7% | 21% |
 
-Model settings: 80% recent trend (half-life 40 episodes), 0% what usually follows the last topic, rest all-time mix.
+Model settings: 65% recent trend (half-life 40 episodes), 0% what usually follows the last topic, rest all-time mix.
 
 ## Rising and falling topics (last 50 episodes vs the 100 before)
 
