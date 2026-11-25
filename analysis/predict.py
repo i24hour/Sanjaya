@@ -318,7 +318,7 @@ def main():
         L.insert(L.index("\n## Confidence: how this model did on past episodes\n"),
                  "\n## Live track record\n\nEach forecast is logged in `output/prediction_log.csv` and scored "
                  "once the episode is out. Language is scored once its transcript is downloaded. "
-                 "FO591.s forecast was made after its release, but from data that stopped at FO590 "
+                 "FO591's forecast was made after its release, but from data that stopped at FO590 "
                  "(it never saw FO591); later forecasts are made before release.\n\n"
                  "| Episode | Predicted top 3 | Actual | In top 3? | Language right? |\n"
                  "|---|---|---|---|---|\n" + "\n".join(

@@ -16,7 +16,7 @@
 
 ## Live track record
 
-Each forecast is logged in `output/prediction_log.csv` and scored once the episode is out. Language is scored once its transcript is downloaded. FO591.s forecast was made after its release, but from data that stopped at FO590 (it never saw FO591); later forecasts are made before release.
+Each forecast is logged in `output/prediction_log.csv` and scored once the episode is out. Language is scored once its transcript is downloaded. FO591's forecast was made after its release, but from data that stopped at FO590 (it never saw FO591); later forecasts are made before release.
 
 | Episode | Predicted top 3 | Actual | In top 3? | Language right? |
 |---|---|---|---|---|
