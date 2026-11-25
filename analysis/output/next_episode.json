@@ -1,52 +1,52 @@
 {
-  "next_episode": 591,
+  "next_episode": 593,
   "topic_probabilities": {
-    "Psychology & Self-Growth": 0.2001,
-    "Business & Startups": 0.1268,
-    "Health & Fitness": 0.1253,
-    "Money & Investing": 0.1112,
-    "Geopolitics & Defence": 0.1112,
-    "Tech & AI": 0.0717,
-    "Politics & Governance": 0.0639,
-    "Entertainment & Celebrities": 0.0559,
-    "Crime & Dark Side": 0.0387,
-    "Education & Career": 0.0376,
-    "Sports": 0.0335,
-    "Spirituality & Mysteries": 0.0145,
+    "Psychology & Self-Growth": 0.1951,
+    "Business & Startups": 0.1352,
+    "Health & Fitness": 0.1228,
+    "Money & Investing": 0.1194,
+    "Geopolitics & Defence": 0.1084,
+    "Tech & AI": 0.0699,
+    "Politics & Governance": 0.0625,
+    "Entertainment & Celebrities": 0.055,
+    "Crime & Dark Side": 0.038,
+    "Education & Career": 0.0369,
+    "Sports": 0.0329,
+    "Spirituality & Mysteries": 0.0143,
     "History & Culture": 0.0096
   },
-  "p_english": 0.871,
+  "p_english": 0.727,
   "guest_type_probabilities": {
-    "Expert / other": 0.3536,
-    "Doctor / health expert": 0.1694,
-    "Founder / business leader": 0.1193,
-    "Military / intelligence": 0.1011,
-    "Investor / finance expert": 0.0989,
-    "Actor / artist / creator": 0.0559,
-    "Athlete": 0.0335,
-    "Academic / author / scientist": 0.0303,
-    "Politician / official / diplomat": 0.0236,
-    "Spiritual guide": 0.0145
+    "Expert / other": 0.3432,
+    "Doctor / health expert": 0.165,
+    "Founder / business leader": 0.1277,
+    "Investor / finance expert": 0.1068,
+    "Military / intelligence": 0.0992,
+    "Actor / artist / creator": 0.055,
+    "Athlete": 0.0329,
+    "Academic / author / scientist": 0.0308,
+    "Politician / official / diplomat": 0.025,
+    "Spiritual guide": 0.0143
   },
   "backtest": {
     "Combined model (signals + trend)": {
       "top1": 0.14166666666666666,
-      "top3": 0.375,
-      "logloss": 2.387677416584079
+      "top3": 0.38333333333333336,
+      "logloss": 2.3792404032531542
     },
     "Signals model alone": {
       "top1": 0.11666666666666667,
-      "top3": 0.31666666666666665,
-      "logloss": 2.7804641099674083
+      "top3": 0.2916666666666667,
+      "logloss": 2.812857654941034
     },
     "Trend model (previous forecast)": {
       "top1": 0.14166666666666666,
-      "top3": 0.375,
-      "logloss": 2.387677416584079
+      "top3": 0.38333333333333336,
+      "logloss": 2.3792404032531542
     },
     "Always the most common topic": {
-      "top1": 0.09166666666666666,
-      "top3": 0.4083333333333333
+      "top1": 0.1,
+      "top3": 0.4166666666666667
     }
   },
   "blend_weight_signals": 0.0,

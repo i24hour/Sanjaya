@@ -8,6 +8,7 @@ import json
 import re
 import subprocess
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 CHANNEL = "https://www.youtube.com/@rajshamani/videos"
@@ -17,7 +18,8 @@ EP = re.compile(r"\bFO\s?(\d{1,4})\b", re.I)
 
 def main():
     raw = subprocess.run(
-        [sys.executable, "-m", "yt_dlp", "--flat-playlist", "-J", CHANNEL],
+        [sys.executable, "-m", "yt_dlp", "--flat-playlist", "-J",
+         "--extractor-args", "youtubetab:approximate_date", CHANNEL],
         check=True, capture_output=True, text=True,
     ).stdout
     entries = json.loads(raw)["entries"]
@@ -32,6 +34,12 @@ def main():
             "episode": int(m.group(1)) if m else "",
             "duration_s": e.get("duration") or "",
             "views": e.get("view_count") or "",
+            # YouTube only shows "3 weeks ago" / "1 year ago", so this is approximate:
+            # about right to the day for the last month, the month for the last year,
+            # and only the year before that.
+            "upload_date_approx": (
+                datetime.fromtimestamp(e["timestamp"], timezone.utc).strftime("%Y-%m-%d")
+                if e.get("timestamp") else ""),
         })
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with OUT.open("w", newline="", encoding="utf-8") as f:

@@ -31,6 +31,7 @@ If YouTube blocks it, the script pauses and retries by itself, so leave it runni
 ## Output
 
 - `output/next_episode_brief.md`: **the Palantir-style brief**: the call, its track record, and the signals behind it
+- `output/prediction_log.csv`: every forecast made, scored automatically once the episode comes out (re-run `fetch_videos.py`, `analyze.py`, `ontology.py`, `predict.py`)
 - `output/sanjaya.db`: the ontology, a SQLite database of episodes, guests, topics and mentioned entities, linked, with the source of every fact. Try `SELECT * FROM v_episode`.
 
 - `output/research.md`: **the main research report**: key findings, topic mix over time, what gets watched, themes found in transcripts, forecast

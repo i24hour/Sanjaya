@@ -110,6 +110,35 @@ def score(preds, w):
     return {"top1": top1 / n, "top3": top3 / n, "logloss": ll / n}
 
 
+LOG = OUT / "prediction_log.csv"
+LOG_COLS = ["episode", "made_on", "top1", "top2", "top3", "p_top1", "p_english",
+            "actual_topic", "actual_language", "hit_top1", "hit_top3", "lang_hit"]
+
+
+def update_log(ep, nxt, topic_rank, p_en):
+    """Record this forecast, and score earlier forecasts whose episode is now out."""
+    import datetime
+    log = pd.read_csv(LOG) if LOG.exists() else pd.DataFrame(columns=LOG_COLS)
+    if not (log["episode"] == nxt).any():
+        log.loc[len(log)] = [nxt, datetime.date.today().isoformat(),
+                             topic_rank[0][0], topic_rank[1][0], topic_rank[2][0],
+                             round(topic_rank[0][1], 3), round(float(p_en), 3),
+                             "", "", "", "", ""]
+    actual = ep.set_index("episode")
+    for i, r in log.iterrows():
+        e = int(r["episode"])
+        if e in actual.index and (pd.isna(r["actual_topic"]) or r["actual_topic"] == ""):
+            a = actual.loc[e]
+            log.at[i, "actual_topic"] = a["primary_topic"]
+            log.at[i, "actual_language"] = a["language"] or "unknown"
+            log.at[i, "hit_top1"] = a["primary_topic"] == r["top1"]
+            log.at[i, "hit_top3"] = a["primary_topic"] in (r["top1"], r["top2"], r["top3"])
+            log.at[i, "lang_hit"] = (("English" if float(r["p_english"]) >= 0.5 else "Hindi")
+                                     == a["language"]) if a["language"] else ""
+    log.to_csv(LOG, index=False)
+    return log[log["actual_topic"].fillna("") != ""]
+
+
 def main():
     ep, mentions, guests = load()
     cats = [t for t in list(analyze.TOPICS) + ["Other"] if (ep.primary_topic == t).any()]
@@ -284,6 +313,19 @@ def main():
       "title-only reading); a wrong tag in the history adds noise to the forecast.")
     w("- No upload dates are used (the channel listing doesn't give them from this server), "
       "so seasonality and news events aren't modelled.")
+    track = update_log(ep, nxt, topic_rank, p_en)
+    if track is not None and len(track):
+        L.insert(L.index("\n## Confidence: how this model did on past episodes\n"),
+                 "\n## Live track record\n\nEach forecast is logged in `output/prediction_log.csv` and scored "
+                 "once the episode is out. Language is scored once its transcript is downloaded. "
+                 "FO591.s forecast was made after its release, but from data that stopped at FO590 "
+                 "(it never saw FO591); later forecasts are made before release.\n\n"
+                 "| Episode | Predicted top 3 | Actual | In top 3? | Language right? |\n"
+                 "|---|---|---|---|---|\n" + "\n".join(
+                     f"| FO{int(r.episode)} | {r.top1}, {r.top2}, {r.top3} | {r.actual_topic} | "
+                     f"{'yes' if str(r.hit_top3) == 'True' else 'no'} | "
+                     f"{ {'True': 'yes', 'False': 'no'}.get(str(r.lang_hit), 'not known yet') } |"
+                     for r in track.itertuples()) + "\n")
     (OUT / "next_episode_brief.md").write_text("\n".join(L) + "\n", encoding="utf-8")
     (OUT / "next_episode.json").write_text(json.dumps({
         "next_episode": nxt,
