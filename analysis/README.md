@@ -7,6 +7,8 @@ Predicts the topic of Raj Shamani's next *Figuring Out* podcast episode from his
 | 1. List all videos | `python fetch_videos.py` → `data/videos.csv` | anywhere (already done) |
 | 2. Download transcripts | `python fetch_transcripts.py` → `data/transcripts/` | **your own computer** |
 | 3. Tag topics + forecast | `python analyze.py` → `output/` | anywhere |
+| 5. Ontology (one record) | `python ontology.py` → `output/sanjaya.db` | anywhere |
+| 6. Next-episode brief | `python predict.py` → `output/next_episode_brief.md` | anywhere (needs scikit-learn) |
 | 4. Research report | `python research.py` → `output/research.md` | anywhere (needs `pip install scikit-learn`) |
 
 YouTube blocks transcript downloads from cloud servers, so step 2 has to run on a normal home or office connection.
@@ -27,6 +29,9 @@ git push
 If YouTube blocks it, the script pauses and retries by itself, so leave it running (e.g. overnight). Ctrl+C is safe; finished videos are skipped next run.
 
 ## Output
+
+- `output/next_episode_brief.md`: **the Palantir-style brief**: the call, its track record, and the signals behind it
+- `output/sanjaya.db`: the ontology, a SQLite database of episodes, guests, topics and mentioned entities, linked, with the source of every fact. Try `SELECT * FROM v_episode`.
 
 - `output/research.md`: **the main research report**: key findings, topic mix over time, what gets watched, themes found in transcripts, forecast
 

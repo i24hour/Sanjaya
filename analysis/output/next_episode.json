@@ -1,0 +1,105 @@
+{
+  "next_episode": 591,
+  "topic_probabilities": {
+    "Psychology & Self-Growth": 0.2001,
+    "Business & Startups": 0.1268,
+    "Health & Fitness": 0.1253,
+    "Money & Investing": 0.1112,
+    "Geopolitics & Defence": 0.1112,
+    "Tech & AI": 0.0717,
+    "Politics & Governance": 0.0639,
+    "Entertainment & Celebrities": 0.0559,
+    "Crime & Dark Side": 0.0387,
+    "Education & Career": 0.0376,
+    "Sports": 0.0335,
+    "Spirituality & Mysteries": 0.0145,
+    "History & Culture": 0.0096
+  },
+  "p_english": 0.871,
+  "guest_type_probabilities": {
+    "Expert / other": 0.3536,
+    "Doctor / health expert": 0.1694,
+    "Founder / business leader": 0.1193,
+    "Military / intelligence": 0.1011,
+    "Investor / finance expert": 0.0989,
+    "Actor / artist / creator": 0.0559,
+    "Athlete": 0.0335,
+    "Academic / author / scientist": 0.0303,
+    "Politician / official / diplomat": 0.0236,
+    "Spiritual guide": 0.0145
+  },
+  "backtest": {
+    "Combined model (signals + trend)": {
+      "top1": 0.14166666666666666,
+      "top3": 0.375,
+      "logloss": 2.387677416584079
+    },
+    "Signals model alone": {
+      "top1": 0.11666666666666667,
+      "top3": 0.31666666666666665,
+      "logloss": 2.7804641099674083
+    },
+    "Trend model (previous forecast)": {
+      "top1": 0.14166666666666666,
+      "top3": 0.375,
+      "logloss": 2.387677416584079
+    },
+    "Always the most common topic": {
+      "top1": 0.09166666666666666,
+      "top3": 0.4083333333333333
+    }
+  },
+  "blend_weight_signals": 0.0,
+  "rising_entities": {
+    "Anxiety / depression": {
+      "recent": 0.106,
+      "prior": 0.054,
+      "ratio": 1.503
+    },
+    "Dopamine": {
+      "recent": 0.093,
+      "prior": 0.046,
+      "ratio": 1.48
+    },
+    "Startup funding": {
+      "recent": 0.083,
+      "prior": 0.077,
+      "ratio": 1.05
+    },
+    "War": {
+      "recent": 0.265,
+      "prior": 0.267,
+      "ratio": 0.993
+    },
+    "AI": {
+      "recent": 0.537,
+      "prior": 0.687,
+      "ratio": 0.796
+    },
+    "Marriage": {
+      "recent": 0.121,
+      "prior": 0.17,
+      "ratio": 0.776
+    },
+    "Europe": {
+      "recent": 0.124,
+      "prior": 0.213,
+      "ratio": 0.662
+    },
+    "USA": {
+      "recent": 0.374,
+      "prior": 0.637,
+      "ratio": 0.617
+    },
+    "Russia": {
+      "recent": 0.133,
+      "prior": 0.292,
+      "ratio": 0.533
+    },
+    "Pakistan": {
+      "recent": 0.039,
+      "prior": 0.164,
+      "ratio": 0.417
+    }
+  }
+}
