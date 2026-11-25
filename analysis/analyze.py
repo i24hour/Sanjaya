@@ -116,6 +116,44 @@ TOPICS = {
     ],
 }
 
+
+# Hindi transcripts are YouTube auto-captions in Devanagari, full of English words
+# written phonetically ("बिज़नेस", "इन्वेस्टमेंट"). These lists cover both Hindi words
+# and those loanwords. A transcript word counts if it starts with a keyword
+# (keywords of 2 letters or fewer must match the whole word).
+HINDI = {
+    "Business & Startups": "बिजनेस स्टार्टअप कंपनी कंपनीज ब्रांड फाउंडर कस्टमर मार्केटिंग सेल्स प्रोडक्ट रेवेन्यू प्रॉफिट फंडिंग इन्वेस्टर दुकान एंटरप्रेन्योर मार्जिन फ्रेंचाइजी रिटेल वैल्यूएशन यूनिकॉर्न",
+    "Money & Investing": "पैसा पैसे पैसों इन्वेस्ट स्टॉक म्यूचुअल म्यूच्यूअल क्रिप्टो बिटकॉइन गोल्ड टैक्स सैलरी लोन रुपए रुपये करोड़ डॉलर इनकम ट्रेडिंग ट्रेडर इकोनॉमी इन्फ्लेशन प्रॉपर्टी रियल बैंक फाइनेंस फाइनेंशियल अमीर गरीब वेल्थ मार्केट",
+    "Health & Fitness": "हेल्थ डॉक्टर बीमारी डाइट वेट फैट ब्लड हार्ट शुगर डायबिटीज कैंसर स्लीप नींद प्रोटीन एक्सरसाइज जिम वर्कआउट स्किन हेयर ब्रेन हॉस्पिटल मेडिकल मेडिसिन लिवर किडनी हार्मोन हेल्दी योगा प्रेगनेंसी सेक्स न्यूट्रिशन विटामिन इंफेक्शन पेशेंट",
+    "Psychology & Self-Growth": "माइंडसेट कॉन्फिडेंस हैबिट डिसिप्लिन मोटिवेशन सक्सेस रिलेशनशिप प्यार लव शादी मैरिज ब्रेकअप ट्रॉमा एंजायटी डिप्रेशन स्ट्रेस मेंटल इमोशन थेरेपी पर्सनालिटी बिहेवियर फियर गुस्सा हैप्पी पेरेंट्स पेरेंटिंग दोस्त कम्युनिकेशन साइकोलॉजी ईगो",
+    "Spirituality & Mysteries": "भगवान गॉड मंदिर धर्म हिंदू महाभारत रामायण कृष्ण शिव कर्म ज्योतिष कुंडली वास्तु तंत्र अघोरी भूत आत्मा कुंभ सनातन मेडिटेशन पूजा गीता वेद पुराण देवी देवता साधु मोक्ष पुनर्जन्म ब्रह्मांड यूनिवर्स चक्र स्पिरिचुअल",
+    "Geopolitics & Defence": "चाइना चीन पाकिस्तान अमेरिका रशिया यूक्रेन इजराइल ईरान वॉर युद्ध आर्मी मिलिट्री नेवी एयरफोर्स सोल्जर कमांडो स्पाई इंटेलिजेंस आईएसआई टेररिस्ट टेरर बॉर्डर कश्मीर डिफेंस मिसाइल न्यूक्लियर बांग्लादेश ट्रंप टैरिफ जियोपॉलिटिक्स",
+    "Politics & Governance": "पॉलिटिक्स पॉलिटिकल पॉलिटिशियन इलेक्शन बीजेपी कांग्रेस मोदी मिनिस्टर गवर्नमेंट सरकार पार्लियामेंट पॉलिसी यूपीएससी आईएएस आईपीएस करप्शन कॉन्स्टिट्यूशन कोर्ट जज कानून वकील लॉयर वोट नेता डेमोक्रेसी ब्यूरोक्रेसी",
+    "Entertainment & Celebrities": "बॉलीवुड फिल्म मूवी एक्टर एक्ट्रेस डायरेक्टर गाना सॉन्ग सिंगर म्यूजिक कॉमेडी कॉमेडियन ओटीटी नेटफ्लिक्स सीरीज टीवी हीरो स्टारडम सेलिब्रिटी इन्फ्लुएंसर यूट्यूबर कंटेंट क्रिएटर शूटिंग एक्टिंग",
+    "Sports": "क्रिकेट क्रिकेटर आईपीएल धोनी कोहली विराट रोहित ओलंपिक एथलीट फुटबॉल चेस बॉक्सिंग रेसलिंग कबड्डी मेडल स्पोर्ट्स कोच बैटिंग बॉलिंग",
+    "Tech & AI": "एआई टेक्नोलॉजी सॉफ्टवेयर कोडिंग इंटरनेट रोबोट ऑटोमेशन डाटा डेटा साइबर हैकर हैकिंग ऐप स्मार्टफोन सेमीकंडक्टर इसरो नासा चैटजीपीटी एल्गोरिदम कंप्यूटर डिजिटल",
+    "Crime & Dark Side": "क्राइम क्रिमिनल मर्डर पुलिस स्कैम फ्रॉड माफिया गैंगस्टर अंडरवर्ल्ड ड्रग्स जेल सीबीआई इन्वेस्टिगेशन किडनैप गैंग गोली हत्या चोरी",
+    "Education & Career": "एजुकेशन स्कूल टीचर एग्जाम कॉलेज स्टूडेंट करियर जॉब नौकरी स्किल पढ़ाई डिग्री यूनिवर्सिटी आईआईटी नीट जेईई कोचिंग एमबीए",
+    "History & Culture": "हिस्ट्री इतिहास एंशिएंट मुगल ब्रिटिश अंग्रेज राजा सभ्यता कल्चर संस्कृति परंपरा ट्रेडिशन त्योहार ट्रेवल आजादी पार्टीशन",
+}
+NUKTA = "\u093c"
+HINDI = {t: [w.replace(NUKTA, "") for w in ws.split()] for t, ws in HINDI.items()}
+DEVA = re.compile(r"[\u0900-\u097F]+")
+
+
+def hindi_counts(text):
+    """Count topic keywords among the Devanagari words of a transcript."""
+    words = Counter(w.replace(NUKTA, "") for w in DEVA.findall(text))
+    out = {}
+    for topic, keys in HINDI.items():
+        n = 0
+        for w, c in words.items():
+            if any(w == k if len(k) <= 2 else w.startswith(k) for k in keys):
+                n += c
+        out[topic] = n
+    return out
+
+
 TITLE_WEIGHT = 1.0
 TRANSCRIPT_WEIGHT = 0.15  # per match per 1,000 words, so long episodes don't swamp the title
 EP = re.compile(r"\|\s*FO\s?\d+.*$", re.I)
@@ -148,11 +186,13 @@ def clean_title(title):
 def score(title, transcript):
     t = clean_title(title)
     words = max(len(transcript.split()), 1) if transcript else 0
+    hi = hindi_counts(transcript) if transcript else {}
     scores = {}
     for topic, pat in PATTERNS.items():
         s = TITLE_WEIGHT * len(pat.findall(t))
         if transcript:
-            s += TRANSCRIPT_WEIGHT * len(pat.findall(transcript)) * 1000 / words
+            hits = len(pat.findall(transcript)) + hi.get(topic, 0)
+            s += TRANSCRIPT_WEIGHT * hits * 1000 / words
         scores[topic] = s
     return scores
 

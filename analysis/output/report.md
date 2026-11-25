@@ -7,9 +7,9 @@ Based on 564 *Figuring Out* episodes (FO1 to FO590). Transcripts used for 553 of
 | Topic | Probability |
 |---|---|
 | Psychology & Self-Growth | 20% |
-| Business & Startups | 14% |
-| Health & Fitness | 13% |
-| Money & Investing | 12% |
+| Business & Startups | 13% |
+| Health & Fitness | 12% |
+| Money & Investing | 11% |
 | Geopolitics & Defence | 11% |
 | Tech & AI | 7% |
 
@@ -21,9 +21,9 @@ Each of those episodes was predicted using only the episodes before it. Settings
 
 | Method | Right first guess | Right in top 3 |
 |---|---|---|
-| **This model** | **15%** | **39%** |
-| Always the most common topic so far | 9% | 42% |
-| Same topic as last episode | 9% | 31% |
+| **This model** | **14%** | **38%** |
+| Always the most common topic so far | 9% | 41% |
+| Same topic as last episode | 9% | 30% |
 | Random guess | 7% | 21% |
 
 Model settings: 65% recent trend (half-life 40 episodes), 0% what usually follows the last topic, rest all-time mix.
@@ -32,36 +32,35 @@ Model settings: 65% recent trend (half-life 40 episodes), 0% what usually follow
 
 | Topic | Last 50 | 100 before | Change |
 |---|---|---|---|
-| Psychology & Self-Growth | 30% | 16% | +14 pts |
+| Psychology & Self-Growth | 30% | 14% | +16 pts |
 | Geopolitics & Defence | 16% | 13% | +3 pts |
-| Crime & Dark Side | 4% | 1% | +3 pts |
 | Spirituality & Mysteries | 2% | 0% | +2 pts |
-| Sports | 2% | 2% | +0 pts |
+| Crime & Dark Side | 4% | 2% | +2 pts |
 | Tech & AI | 8% | 9% | -1 pts |
-| Education & Career | 2% | 3% | -1 pts |
+| Sports | 2% | 3% | -1 pts |
 | History & Culture | 0% | 1% | -1 pts |
-| Politics & Governance | 6% | 7% | -1 pts |
-| Business & Startups | 10% | 13% | -3 pts |
-| Money & Investing | 10% | 15% | -5 pts |
+| Business & Startups | 10% | 12% | -2 pts |
+| Education & Career | 2% | 4% | -2 pts |
+| Politics & Governance | 6% | 8% | -2 pts |
+| Money & Investing | 10% | 13% | -3 pts |
 | Health & Fitness | 10% | 15% | -5 pts |
-| Entertainment & Celebrities | 0% | 5% | -5 pts |
+| Entertainment & Celebrities | 0% | 6% | -6 pts |
 
 ## Which topics get watched (last 200 episodes, median views)
 
 | Topic | Episodes | Median views |
 |---|---|---|
-| Spirituality & Mysteries | 1 | 6.10M |
-| Crime & Dark Side | 6 | 1.75M |
-| Politics & Governance | 6 | 1.65M |
-| Geopolitics & Defence | 20 | 1.50M |
-| Sports | 11 | 1.30M |
+| Crime & Dark Side | 7 | 1.80M |
+| Geopolitics & Defence | 19 | 1.80M |
+| Sports | 12 | 1.40M |
+| Psychology & Self-Growth | 32 | 1.30M |
 | Tech & AI | 11 | 1.30M |
-| Psychology & Self-Growth | 33 | 1.30M |
-| Money & Investing | 31 | 1.10M |
-| Entertainment & Celebrities | 14 | 0.98M |
-| Business & Startups | 27 | 0.96M |
+| Politics & Governance | 7 | 1.20M |
+| Money & Investing | 31 | 1.00M |
+| Entertainment & Celebrities | 16 | 0.97M |
+| Business & Startups | 24 | 0.86M |
 | Health & Fitness | 35 | 0.63M |
-| Education & Career | 5 | 0.60M |
+| Education & Career | 6 | 0.52M |
 
 ## Topic mix of the last 15 episodes
 
