@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Figuring Out, decoded — Sanjaya Research</title>
+    <meta
+      name="description"
+      content="A Sanjaya field report on Raj Shamani's Figuring Out podcast: 566 episodes and 553 transcripts resolved into one record, what the show talks about, what gets watched, and a tested forecast of the next episode."
+    />
+    <meta name="theme-color" content="#0e100d" />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <meta property="og:site_name" content="Sanjaya" />
+    <meta property="og:title" content="Figuring Out, decoded — Sanjaya Research" />
+    <meta
+      property="og:description"
+      content="566 episodes, 553 transcripts, one record. What Raj Shamani's podcast talks about, what gets watched, and what comes next."
+    />
+    <meta property="og:type" content="article" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,560;1,9..144,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+Devanagari:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="research.css" />
+  </head>
+  <body id="top" class="research">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-bar">
+        <a class="brand" href="../../">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="1.25" />
+            <circle cx="16" cy="16" r="2.15" fill="#d08a45" />
+            <path d="M16 5.2v3.5M16 23.3v3.5" stroke="currentColor" stroke-width="1.25" />
+          </svg>
+          <span class="brand-name">Sanjaya</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Report">
+          <a href="#forecast" data-nav>Forecast</a>
+          <a href="#findings" data-nav>Findings</a>
+          <a href="#signals" data-nav>Signals</a>
+          <a href="#method" data-nav>Method</a>
+        </nav>
+
+        <div class="header-end">
+          <a class="backing-lockup" href="../../">Back to Sanjaya</a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+            Menu
+          </button>
+        </div>
+      </div>
+      <div class="wrap">
+        <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+          <a href="#forecast">Forecast</a>
+          <a href="#findings">Findings</a>
+          <a href="#signals">Signals</a>
+          <a href="#method">Method</a>
+          <a href="../../">Back to Sanjaya</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <!-- ============ HERO ============ -->
+      <section class="r-hero" aria-labelledby="r-title">
+        <div class="wrap r-hero-grid">
+          <div>
+            <p class="eyebrow"><i aria-hidden="true"></i> Field report 01 · Research</p>
+            <h1 id="r-title">Figuring Out,<br /><em>decoded.</em></h1>
+            <p class="lede">
+              Every episode of Raj Shamani's podcast, read end to end. Transcripts in English and
+              Hindi resolved into one record of episodes, guests, topics and the things they talk
+              about, then used to answer three questions: what is the show about, what do people
+              actually watch, and what comes next.
+            </p>
+            <dl class="r-stats" id="r-stats"></dl>
+          </div>
+
+          <aside class="call-card" id="call-card" aria-labelledby="call-title">
+            <div class="call-head">
+              <span class="call-kicker" id="call-title">Forecast</span>
+              <span class="call-ep" id="call-ep">FO—</span>
+            </div>
+            <div class="dial-wrap">
+              <svg class="dial" viewBox="0 0 240 240" aria-hidden="true">
+                <circle cx="120" cy="120" r="104" class="dial-ring" />
+                <circle cx="120" cy="120" r="96" class="dial-ticks" />
+                <circle cx="120" cy="120" r="86" class="dial-track" />
+                <circle cx="120" cy="120" r="86" class="dial-arc" id="dial-arc" />
+              </svg>
+              <div class="dial-center">
+                <span class="dial-pct" id="dial-pct">—</span>
+                <span class="dial-label">chance</span>
+              </div>
+            </div>
+            <p class="call-topic" id="call-topic">—</p>
+            <p class="call-sub" id="call-sub"></p>
+            <div class="call-foot" id="call-foot"></div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ============ FORECAST ============ -->
+      <section class="section r-section" id="forecast" aria-labelledby="fc-title">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <p class="kicker">01 — The call</p>
+              <h2 id="fc-title">What the next episode is likely to be.</h2>
+            </div>
+            <div>
+              <p>
+                Probabilities for every topic, from a model that weighs the show's recent direction
+                most. Each was tested by predicting past episodes from only what came before them.
+              </p>
+            </div>
+          </div>
+
+          <div class="fc-grid">
+            <div class="panel reveal">
+              <div class="panel-head">
+                <h3>Topic probabilities</h3>
+                <p class="panel-note">Next episode</p>
+              </div>
+              <div id="chart-forecast" class="hbars"></div>
+              <details class="table-view"><summary>Data table</summary><div id="t-forecast"></div></details>
+            </div>
+
+            <div class="profiles reveal" id="profiles"></div>
+          </div>
+
+          <div class="scorecards reveal">
+            <div class="panel">
+              <div class="panel-head">
+                <h3>How reliable is this?</h3>
+                <p class="panel-note">Tested on the last 120 episodes</p>
+              </div>
+              <div id="chart-backtest" class="hbars"></div>
+              <p class="fineprint" id="backtest-note"></p>
+            </div>
+            <div class="panel">
+              <div class="panel-head">
+                <h3>Live track record</h3>
+                <p class="panel-note">Scored when the episode comes out</p>
+              </div>
+              <ol class="track" id="track"></ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FINDINGS ============ -->
+      <section class="section r-section paper-dark" id="findings" aria-labelledby="fi-title">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <p class="kicker">02 — Findings</p>
+              <h2 id="fi-title">The show changed its mind.</h2>
+            </div>
+            <div><p id="findings-lede"></p></div>
+          </div>
+
+          <ol class="findings reveal" id="findings-list"></ol>
+
+          <div class="panel panel-wide reveal">
+            <div class="panel-head">
+              <h3>Topic mix over time</h3>
+              <p class="panel-note">Share of the previous 40 episodes, by episode number</p>
+            </div>
+            <div class="legend" id="legend-river"></div>
+            <div id="chart-river" class="chart chart-tall"></div>
+            <details class="table-view"><summary>Data table</summary><div id="t-river"></div></details>
+          </div>
+
+          <div class="two-up">
+            <div class="panel reveal">
+              <div class="panel-head">
+                <h3>Made vs watched</h3>
+                <p class="panel-note">Last 200 episodes, topics with 5+ episodes</p>
+              </div>
+              <div class="legend">
+                <span class="key"><i class="dot dot-made"></i>Share of episodes</span>
+                <span class="key"><i class="dot dot-watched"></i>Share of all views</span>
+              </div>
+              <div id="chart-made"></div>
+              <details class="table-view"><summary>Data table</summary><div id="t-made"></div></details>
+            </div>
+            <div class="panel reveal">
+              <div class="panel-head">
+                <h3>The language swing</h3>
+                <p class="panel-note">Share of English-language episodes, previous 40</p>
+              </div>
+              <div id="chart-lang" class="chart"></div>
+              <details class="table-view"><summary>Data table</summary><div id="t-lang"></div></details>
+              <div class="panel-head panel-head-sub">
+                <h3>Longer episodes, more views</h3>
+                <p class="panel-note">Median views by length, last 200</p>
+              </div>
+              <div id="chart-length" class="hbars"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SIGNALS ============ -->
+      <section class="section r-section" id="signals" aria-labelledby="si-title">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <p class="kicker">03 — Signals</p>
+              <h2 id="si-title">The operational picture.</h2>
+            </div>
+            <div>
+              <p>
+                What is moving right now. Signals are context for the forecast, not its drivers:
+                when tested, they did not beat the recent-trend model on their own.
+              </p>
+            </div>
+          </div>
+
+          <div class="panel panel-wide reveal">
+            <div class="panel-head">
+              <h3>The last 40 episodes</h3>
+              <p class="panel-note">Oldest to newest · hover or tap an episode</p>
+            </div>
+            <div class="legend" id="legend-strip"></div>
+            <div id="chart-strip" class="strip" role="list"></div>
+            <ol class="recent-log" id="recent-log"></ol>
+          </div>
+
+          <div class="three-up">
+            <div class="panel reveal">
+              <div class="panel-head">
+                <h3>Momentum</h3>
+                <p class="panel-note">Last 20 vs last 100 episodes</p>
+              </div>
+              <div class="legend">
+                <span class="key"><i class="dot dot-before"></i>Last 100</span>
+                <span class="key"><i class="dot dot-now"></i>Last 20</span>
+              </div>
+              <div id="chart-momentum"></div>
+            </div>
+            <div class="panel reveal">
+              <div class="panel-head">
+                <h3>In the conversations</h3>
+                <p class="panel-note">Mentions per 1,000 words, last 30 vs 120 before</p>
+              </div>
+              <ul class="entities" id="entities"></ul>
+            </div>
+            <div class="panel reveal">
+              <div class="panel-head">
+                <h3>Overdue</h3>
+                <p class="panel-note">Episodes since a topic last aired vs its usual gap</p>
+              </div>
+              <ul class="overdue" id="overdue"></ul>
+            </div>
+          </div>
+
+          <div class="panel panel-wide reveal">
+            <div class="panel-head">
+              <h3>Most-watched episodes</h3>
+              <p class="panel-note">All time</p>
+            </div>
+            <ol class="top-list" id="top-list"></ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ METHOD ============ -->
+      <section class="section r-section paper-dark" id="method" aria-labelledby="me-title">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <p class="kicker">04 — Method</p>
+              <h2 id="me-title">Collect, resolve, see, act.</h2>
+            </div>
+            <div>
+              <p>
+                The same cycle Sanjaya is being built to run, applied to one public dataset. Every
+                number on this page traces back to a row with a source.
+              </p>
+            </div>
+          </div>
+
+          <ol class="pipeline reveal" id="pipeline"></ol>
+
+          <div class="limits reveal">
+            <h3>What this cannot see</h3>
+            <ul>
+              <li>Which guest is available. That decides most episodes and is not public, so even the best model's first guess is right only about one time in seven.</li>
+              <li>Topics are tagged automatically from titles and transcripts. Tagging from the transcript alone agrees with the title for about two thirds of episodes.</li>
+              <li>Titles change after release, as the channel tests them, so an episode's topic can shift with its title.</li>
+              <li>Upload dates are only approximate, so news events are not modelled.</li>
+            </ul>
+            <p class="fineprint" id="updated"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <p class="footer-name">Sanjaya</p>
+          <p class="footer-deva" lang="hi">संजय</p>
+          <p class="muted">Field report 01. Independent analysis of public videos; not affiliated with Raj Shamani or Figuring Out.</p>
+        </div>
+        <div class="footer-meta">
+          <a href="../../">sanjayahq.com</a>
+          <a href="#top">Back to top</a>
+          <p>© 2026 Sanjaya.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="tip" id="tip" role="tooltip" hidden></div>
+    <script src="../../main.js"></script>
+    <script src="research.js"></script>
+  </body>
+</html>

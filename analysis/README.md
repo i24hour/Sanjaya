@@ -9,6 +9,7 @@ Predicts the topic of Raj Shamani's next *Figuring Out* podcast episode from his
 | 3. Tag topics + forecast | `python analyze.py` → `output/` | anywhere |
 | 5. Ontology (one record) | `python ontology.py` → `output/sanjaya.db` | anywhere |
 | 6. Next-episode brief | `python predict.py` → `output/next_episode_brief.md` | anywhere (needs scikit-learn) |
+| 7. Website data | `python export_site.py` → `research/raj-shamani/data.json` (the page at `/research/raj-shamani/`) | anywhere |
 | 4. Research report | `python research.py` → `output/research.md` | anywhere (needs `pip install scikit-learn`) |
 
 YouTube blocks transcript downloads from cloud servers, so step 2 has to run on a normal home or office connection.

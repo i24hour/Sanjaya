@@ -101,5 +101,277 @@
       "prior": 0.164,
       "ratio": 0.417
     }
+  },
+  "entity_trend": {
+    "Anxiety / depression": {
+      "recent": 0.106,
+      "prior": 0.054,
+      "ratio": 1.503
+    },
+    "Dopamine": {
+      "recent": 0.093,
+      "prior": 0.046,
+      "ratio": 1.48
+    },
+    "Startup funding": {
+      "recent": 0.083,
+      "prior": 0.077,
+      "ratio": 1.05
+    },
+    "War": {
+      "recent": 0.265,
+      "prior": 0.267,
+      "ratio": 0.993
+    },
+    "AI": {
+      "recent": 0.537,
+      "prior": 0.687,
+      "ratio": 0.796
+    },
+    "Marriage": {
+      "recent": 0.121,
+      "prior": 0.17,
+      "ratio": 0.776
+    },
+    "Europe": {
+      "recent": 0.124,
+      "prior": 0.213,
+      "ratio": 0.662
+    },
+    "USA": {
+      "recent": 0.374,
+      "prior": 0.637,
+      "ratio": 0.617
+    },
+    "Russia": {
+      "recent": 0.133,
+      "prior": 0.292,
+      "ratio": 0.533
+    },
+    "Pakistan": {
+      "recent": 0.039,
+      "prior": 0.164,
+      "ratio": 0.417
+    },
+    "China": {
+      "recent": 0.264,
+      "prior": 0.753,
+      "ratio": 0.391
+    }
+  },
+  "profiles": [
+    {
+      "topic": "Psychology & Self-Growth",
+      "p": 0.1951,
+      "guest": "outside the usual categories",
+      "language": "English",
+      "entities": [
+        "Marriage",
+        "AI",
+        "Anxiety / depression",
+        "USA"
+      ]
+    },
+    {
+      "topic": "Business & Startups",
+      "p": 0.1352,
+      "guest": "a founder / business leader",
+      "language": "English",
+      "entities": [
+        "USA",
+        "AI",
+        "Startup funding",
+        "China"
+      ]
+    },
+    {
+      "topic": "Health & Fitness",
+      "p": 0.1228,
+      "guest": "a doctor / health expert",
+      "language": "English",
+      "entities": [
+        "Dopamine",
+        "Anxiety / depression",
+        "Diabetes / sugar",
+        "AI"
+      ]
+    }
+  ],
+  "overdue": [
+    {
+      "topic": "Entertainment & Celebrities",
+      "since": 52,
+      "usual_gap": 8.5,
+      "factor": 6.12
+    },
+    {
+      "topic": "Geopolitics & Defence",
+      "since": 11,
+      "usual_gap": 4.0,
+      "factor": 2.75
+    },
+    {
+      "topic": "Sports",
+      "since": 42,
+      "usual_gap": 15.5,
+      "factor": 2.71
+    },
+    {
+      "topic": "Psychology & Self-Growth",
+      "since": 4,
+      "usual_gap": 3.0,
+      "factor": 1.33
+    },
+    {
+      "topic": "Crime & Dark Side",
+      "since": 17,
+      "usual_gap": 15.5,
+      "factor": 1.1
+    },
+    {
+      "topic": "Education & Career",
+      "since": 18,
+      "usual_gap": 19.0,
+      "factor": 0.95
+    },
+    {
+      "topic": "Politics & Governance",
+      "since": 12,
+      "usual_gap": 18.0,
+      "factor": 0.67
+    },
+    {
+      "topic": "Tech & AI",
+      "since": 3,
+      "usual_gap": 9.0,
+      "factor": 0.33
+    },
+    {
+      "topic": "Health & Fitness",
+      "since": 2,
+      "usual_gap": 8.5,
+      "factor": 0.24
+    },
+    {
+      "topic": "Money & Investing",
+      "since": 1,
+      "usual_gap": 9.0,
+      "factor": 0.11
+    },
+    {
+      "topic": "Business & Startups",
+      "since": 0,
+      "usual_gap": 8.5,
+      "factor": 0.0
+    }
+  ],
+  "momentum": [
+    {
+      "topic": "Psychology & Self-Growth",
+      "last20": 0.35,
+      "last100": 0.22
+    },
+    {
+      "topic": "Money & Investing",
+      "last20": 0.15,
+      "last100": 0.13
+    },
+    {
+      "topic": "Business & Startups",
+      "last20": 0.1,
+      "last100": 0.11
+    },
+    {
+      "topic": "Geopolitics & Defence",
+      "last20": 0.1,
+      "last100": 0.14
+    },
+    {
+      "topic": "Tech & AI",
+      "last20": 0.1,
+      "last100": 0.07
+    },
+    {
+      "topic": "Health & Fitness",
+      "last20": 0.05,
+      "last100": 0.11
+    },
+    {
+      "topic": "Politics & Governance",
+      "last20": 0.05,
+      "last100": 0.08
+    },
+    {
+      "topic": "Crime & Dark Side",
+      "last20": 0.05,
+      "last100": 0.02
+    },
+    {
+      "topic": "Education & Career",
+      "last20": 0.05,
+      "last100": 0.04
+    },
+    {
+      "topic": "Spirituality & Mysteries",
+      "last20": 0.0,
+      "last100": 0.01
+    },
+    {
+      "topic": "Entertainment & Celebrities",
+      "last20": 0.0,
+      "last100": 0.03
+    },
+    {
+      "topic": "History & Culture",
+      "last20": 0.0,
+      "last100": 0.01
+    },
+    {
+      "topic": "Sports",
+      "last20": 0.0,
+      "last100": 0.03
+    }
+  ],
+  "view_momentum": [
+    {
+      "topic": "Geopolitics & Defence",
+      "episodes": 6,
+      "median": 2000000.0,
+      "lift": 2.013
+    },
+    {
+      "topic": "Health & Fitness",
+      "episodes": 4,
+      "median": 1085500.0,
+      "lift": 1.093
+    },
+    {
+      "topic": "Psychology & Self-Growth",
+      "episodes": 10,
+      "median": 993500.0,
+      "lift": 1.0
+    },
+    {
+      "topic": "Money & Investing",
+      "episodes": 7,
+      "median": 977000.0,
+      "lift": 0.983
+    },
+    {
+      "topic": "Tech & AI",
+      "episodes": 3,
+      "median": 895000.0,
+      "lift": 0.901
+    },
+    {
+      "topic": "Business & Startups",
+      "episodes": 6,
+      "median": 890500.0,
+      "lift": 0.896
+    }
+  ],
+  "language_backtest": {
+    "model": 0.7203389830508474,
+    "same_as_last": 0.6864406779661016
   }
 }

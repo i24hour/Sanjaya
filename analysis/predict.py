@@ -254,11 +254,14 @@ def main():
       f"{role_rank[1][0]} ({pct(role_rank[1][1])}).")
     w("\n**Three most likely episode profiles** (likely topic + the guest type and "
       "entities that go with it in recent episodes; these are hypotheses, not leaks):\n")
+    profiles = []
     for k, (t, pt) in enumerate(topic_rank[:3], 1):
         roles = role_given_topic[t].index[0] if t in role_given_topic.index.get_level_values(0) else "Expert"
         roles = ("outside the usual categories" if roles == "Expert / other"
                  else "a " + roles.lower())
         ents = topic_entities(t)
+        profiles.append({"topic": t, "p": round(pt, 4), "guest": roles,
+                         "language": "English" if p_en >= 0.5 else "Hindi", "entities": ents})
         w(f"{k}. **{t}** ({pct(pt)}): guest most likely {roles}, {('in English' if p_en >= 0.5 else 'in Hindi')}, "
           f"likely touching on {', '.join(ents) if ents else 'the usual themes'}.")
     w("\n## Confidence: how this model did on past episodes\n")
@@ -334,6 +337,16 @@ def main():
         "guest_type_probabilities": {r: round(pv, 4) for r, pv in role_rank},
         "backtest": results, "blend_weight_signals": w_best,
         "rising_entities": rising.head(10)[["recent", "prior", "ratio"]].round(3).to_dict("index"),
+        "entity_trend": rising[["recent", "prior", "ratio"]].round(3).to_dict("index"),
+        "profiles": profiles,
+        "overdue": [{"topic": t, "since": int(g), "usual_gap": round(ty, 1), "factor": round(r, 2)}
+                    for t, g, ty, r in due],
+        "momentum": [{"topic": t, "last20": c20[t] / 20, "last100": c100[t] / 100}
+                     for t in sorted(set(seq[-100:]), key=lambda t: -c20[t])],
+        "view_momentum": [{"topic": t, "episodes": int(r["count"]), "median": float(r["median"]),
+                           "lift": round(float(r["lift"]), 3)}
+                          for t, r in view_mom[view_mom["count"] >= 3].iterrows()],
+        "language_backtest": {"model": lang_hit / len(test_rows), "same_as_last": base_hit / len(test_rows)},
     }, indent=2))
     print("\n".join(L))
 

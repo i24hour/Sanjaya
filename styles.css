@@ -660,6 +660,66 @@ h2 {
   color: var(--ivory-soft);
 }
 
+.report-link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.6rem 1.6rem;
+  margin: 0 0 clamp(2.5rem, 6vw, 3.5rem);
+  padding: 1.35rem 1.5rem;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--copper);
+  text-decoration: none;
+  background: rgba(243, 239, 230, 0.025);
+  transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.report-link:hover {
+  background: rgba(243, 239, 230, 0.05);
+  border-color: rgba(243, 239, 230, 0.28);
+  border-left-color: var(--copper);
+}
+
+.report-kicker {
+  color: var(--copper);
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.report-title {
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.report-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--ivory-soft);
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.report-cta svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.report-link:hover .report-cta {
+  color: var(--ivory);
+}
+
+@media (max-width: 760px) {
+  .report-link {
+    grid-template-columns: 1fr;
+  }
+}
+
 .contexts-label {
   width: 100%;
   margin-bottom: 0.35rem;
