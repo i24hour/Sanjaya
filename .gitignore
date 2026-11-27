@@ -1,2 +1,6 @@
 .DS_Store
 __pycache__/
+
+# X analytics exports stay local until the owner decides to publish them
+x-analysis/data/
+x-analysis/output/
