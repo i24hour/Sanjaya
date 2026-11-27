@@ -1,17 +1,17 @@
-# Next-episode brief: FO593
+# Next-episode brief: FO594
 
-*Prepared from the Sanjaya ontology: 566 episodes, 553 transcripts, 479 guests, 40 tracked entities. Every number below can be traced back to episode rows in `output/sanjaya.db`.*
+*Prepared from the Sanjaya ontology: 567 episodes, 553 transcripts, 480 guests, 40 tracked entities. Every number below can be traced back to episode rows in `output/sanjaya.db`.*
 
 ## The call
 
-- **Most likely topic:** Psychology & Self-Growth (20%), then Business & Startups (14%) and Health & Fitness (12%).
-- **Language:** English, 73% likely.
-- **Guest type:** Expert / other (34%), then Doctor / health expert (17%).
+- **Most likely topic:** Psychology & Self-Growth (19%), then Business & Startups (13%) and Health & Fitness (12%).
+- **Language:** English, 65% likely.
+- **Guest type:** Expert / other (35%), then Doctor / health expert (16%).
 
 **Three most likely episode profiles** (likely topic + the guest type and entities that go with it in recent episodes; these are hypotheses, not leaks):
 
-1. **Psychology & Self-Growth** (20%): guest most likely outside the usual categories, in English, likely touching on Marriage, AI, Anxiety / depression, USA.
-2. **Business & Startups** (14%): guest most likely a founder / business leader, in English, likely touching on USA, AI, Startup funding, China.
+1. **Psychology & Self-Growth** (19%): guest most likely outside the usual categories, in English, likely touching on Marriage, AI, Anxiety / depression, USA.
+2. **Business & Startups** (13%): guest most likely a founder / business leader, in English, likely touching on USA, AI, Startup funding, China.
 3. **Health & Fitness** (12%): guest most likely a doctor / health expert, in English, likely touching on Dopamine, Anxiety / depression, Diabetes / sugar, AI.
 
 ## Live track record
@@ -21,6 +21,7 @@ Each forecast is logged in `output/prediction_log.csv` and scored once the episo
 | Episode | Predicted top 3 | Actual | In top 3? | Language right? |
 |---|---|---|---|---|
 | FO591 | Psychology & Self-Growth, Business & Startups, Health & Fitness | Money & Investing | no | not known yet |
+| FO593 | Psychology & Self-Growth, Business & Startups, Health & Fitness | Politics & Governance | no | not known yet |
 
 
 ## Confidence: how this model did on past episodes
@@ -30,13 +31,13 @@ Last 120 episodes, each predicted only from earlier ones; the blend weight (0% s
 | Method | Right first guess | Right in top 3 |
 |---|---|---|
 | Combined model (signals + trend) | 14% | 38% |
-| Signals model alone | 12% | 29% |
+| Signals model alone | 12% | 27% |
 | Trend model (previous forecast) | 14% | 38% |
-| Always the most common topic | 10% | 42% |
+| Always the most common topic | 9% | 41% |
 
 **What this shows:** the extra signals (views, how long since a topic last appeared, what came last) did not beat the simple recent-trend model when tested on past episodes, so the validation step gave them no weight. The forecast below is the trend model's, and the signals are shown as context, not as drivers.
 
-Language of the next episode: right 72% of the time, vs 69% for "same language as last episode".
+Language of the next episode: right 72% of the time, vs 68% for "same language as last episode".
 
 ## Signals behind the call
 
@@ -45,25 +46,25 @@ Language of the next episode: right 72% of the time, vs 69% for "same language a
 | Topic | Last 20 | Last 100 |
 |---|---|---|
 | Psychology & Self-Growth | 35% | 22% |
-| Money & Investing | 15% | 13% |
 | Geopolitics & Defence | 10% | 14% |
+| Politics & Governance | 10% | 9% |
 | Tech & AI | 10% | 7% |
+| Money & Investing | 10% | 12% |
 | Business & Startups | 10% | 11% |
 | Education & Career | 5% | 4% |
 | Crime & Dark Side | 5% | 2% |
-| Politics & Governance | 5% | 8% |
 | Health & Fitness | 5% | 11% |
 
-**2. What's drawing views** (last 60 episodes, median views vs the channel's median of 0.99M)
+**2. What's drawing views** (last 60 episodes, median views vs the channel's median of 1.00M)
 
 | Topic | Episodes | Median views | vs channel |
 |---|---|---|---|
-| Geopolitics & Defence | 6 | 2.00M | 2.01× |
-| Health & Fitness | 4 | 1.09M | 1.09× |
-| Psychology & Self-Growth | 10 | 0.99M | 1.00× |
+| Geopolitics & Defence | 5 | 1.30M | 1.30× |
+| Health & Fitness | 4 | 1.14M | 1.14× |
+| Psychology & Self-Growth | 10 | 1.00M | 1.00× |
+| Business & Startups | 6 | 0.99M | 0.99× |
 | Money & Investing | 7 | 0.98M | 0.98× |
-| Tech & AI | 3 | 0.90M | 0.90× |
-| Business & Startups | 6 | 0.89M | 0.90× |
+| Tech & AI | 3 | 0.91M | 0.91× |
 
 Topics with fewer than 3 recent episodes are left out: one episode is not a trend.
 
@@ -71,12 +72,12 @@ Topics with fewer than 3 recent episodes are left out: one episode is not a tren
 
 | Topic | Episodes since last | Usual gap | Overdue factor |
 |---|---|---|---|
-| Entertainment & Celebrities | 52 | 8 | 6.1× |
-| Geopolitics & Defence | 11 | 4 | 2.8× |
-| Sports | 42 | 16 | 2.7× |
-| Psychology & Self-Growth | 4 | 3 | 1.3× |
-| Crime & Dark Side | 17 | 16 | 1.1× |
-| Education & Career | 18 | 19 | 0.9× |
+| Entertainment & Celebrities | 53 | 8 | 6.2× |
+| Geopolitics & Defence | 12 | 4 | 3.0× |
+| Sports | 43 | 16 | 2.8× |
+| Psychology & Self-Growth | 5 | 3 | 1.7× |
+| Crime & Dark Side | 18 | 16 | 1.2× |
+| Education & Career | 19 | 19 | 1.0× |
 
 **4. Rising in the conversations** (mentions per 1,000 words, last 30 transcribed episodes vs the 120 before; only entities that come up in at least 10% of recent episodes)
 
@@ -114,16 +115,16 @@ Topics with fewer than 3 recent episodes are left out: one episode is not a tren
 
 ## Last 10 episodes (the most recent context)
 
-- FO592 · Business & Startups · ? · 0.70M · How To Find Business Ideas, Identify Market Gaps & Make Money | Udit Chawla
+- FO593 · Politics & Governance · ? · views n/a · What's Next For The World: Heatwaves, Water Crisis & Pollution | Sunita Narain
+- FO592 · Business & Startups · ? · 1.10M · How To Find Business Ideas, Identify Market Gaps & Make Money | Udit Chawla
 - FO591 · Money & Investing · ? · views n/a · How Shadow Economy Shapes Trade, Politics, Money & Power | Mariana Van Zeller
-- FO590 · Health & Fitness · English · 1.20M · Top Psychiatrist: What Makes a Criminal Brain Different? | Dr. Daniel Amen
-- FO589 · Tech & AI · English · 0.90M · How AI Agents Will Disrupt Jobs, Businesses & The Internet | Sachin Puri
+- FO590 · Health & Fitness · English · 1.30M · Top Psychiatrist: What Makes a Criminal Brain Different? | Dr. Daniel Amen
+- FO589 · Tech & AI · English · 0.91M · How AI Agents Will Disrupt Jobs, Businesses & The Internet | Sachin Puri
 - FO588 · Psychology & Self-Growth · English · views n/a · Why People Ignore You: The Communication Mistakes You Need To Fix | Vinh Giang
-- FO587 · Business & Startups · English · 0.80M · How To Market Anything In 2027: Creators, Triggers & Communities | Kent Yoshimura
+- FO587 · Business & Startups · English · 0.81M · How To Market Anything In 2027: Creators, Triggers & Communities | Kent Yoshimura
 - FO586 · Psychology & Self-Growth · English · views n/a · Psychology Of Billionaires, Extreme Ambition & Secrets Of Success | Joe Hudson
-- FO585 · Money & Investing · English · 2.50M · Ex-IMF Chief: The Truth About US Debt, Pakistan Loans & Inflation | Gita Gopinath
+- FO585 · Money & Investing · English · 2.60M · Ex-IMF Chief: The Truth About US Debt, Pakistan Loans & Inflation | Gita Gopinath
 - FO584 · Psychology & Self-Growth · English · views n/a · How To Make The Next 10 Years The Best Years Of Your Life | Mel Robbins
-- FO583 · Tech & AI · English · 4.70M · Sam Altman On AI Revolution, Superintelligence & Future Of Humanity
 
 ## Limits
 

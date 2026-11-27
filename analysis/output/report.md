@@ -1,19 +1,19 @@
 # Raj Shamani: what's the next episode about?
 
-Based on 566 *Figuring Out* episodes (FO1 to FO592). Transcripts used for 553 of them; the rest are tagged from the title alone.
+Based on 567 *Figuring Out* episodes (FO1 to FO593). Transcripts used for 553 of them; the rest are tagged from the title alone.
 
-## Forecast for FO593
+## Forecast for FO594
 
 | Topic | Probability |
 |---|---|
-| Psychology & Self-Growth | 19% |
-| Business & Startups | 13% |
-| Health & Fitness | 12% |
+| Psychology & Self-Growth | 18% |
+| Business & Startups | 14% |
+| Health & Fitness | 13% |
 | Money & Investing | 12% |
-| Geopolitics & Defence | 11% |
-| Tech & AI | 7% |
+| Geopolitics & Defence | 10% |
+| Politics & Governance | 7% |
 
-Last episode: FO592, *How To Find Business Ideas, Identify Market Gaps & Make Money | Udit Chawla*, tagged **Business & Startups**.
+Last episode: FO593, *What's Next For The World: Heatwaves, Water Crisis & Pollution | Sunita Narain*, tagged **Politics & Governance**.
 
 ## How good is this? (tested on the last 120 episodes)
 
@@ -21,26 +21,26 @@ Each of those episodes was predicted using only the episodes before it. Settings
 
 | Method | Right first guess | Right in top 3 |
 |---|---|---|
-| **This model** | **14%** | **38%** |
-| Always the most common topic so far | 10% | 42% |
-| Same topic as last episode | 9% | 32% |
+| **This model** | **13%** | **40%** |
+| Always the most common topic so far | 9% | 41% |
+| Same topic as last episode | 9% | 31% |
 | Random guess | 7% | 21% |
 
-Model settings: 65% recent trend (half-life 40 episodes), 0% what usually follows the last topic, rest all-time mix.
+Model settings: 50% recent trend (half-life 40 episodes), 0% what usually follows the last topic, rest all-time mix.
 
 ## Rising and falling topics (last 50 episodes vs the 100 before)
 
 | Topic | Last 50 | 100 before | Change |
 |---|---|---|---|
-| Psychology & Self-Growth | 30% | 14% | +16 pts |
+| Psychology & Self-Growth | 28% | 15% | +13 pts |
 | Geopolitics & Defence | 16% | 13% | +3 pts |
 | Spirituality & Mysteries | 2% | 0% | +2 pts |
 | Crime & Dark Side | 4% | 2% | +2 pts |
+| Politics & Governance | 8% | 7% | +1 pts |
 | Business & Startups | 12% | 12% | +0 pts |
-| Tech & AI | 8% | 9% | -1 pts |
+| Tech & AI | 8% | 8% | +0 pts |
 | Sports | 2% | 3% | -1 pts |
 | History & Culture | 0% | 1% | -1 pts |
-| Politics & Governance | 6% | 7% | -1 pts |
 | Education & Career | 2% | 4% | -2 pts |
 | Health & Fitness | 10% | 14% | -4 pts |
 | Entertainment & Celebrities | 0% | 6% | -6 pts |
@@ -58,12 +58,13 @@ Model settings: 65% recent trend (half-life 40 episodes), 0% what usually follow
 | Politics & Governance | 7 | 1.20M |
 | Money & Investing | 31 | 1.00M |
 | Entertainment & Celebrities | 16 | 0.98M |
-| Business & Startups | 25 | 0.80M |
+| Business & Startups | 25 | 0.96M |
 | Health & Fitness | 35 | 0.66M |
 | Education & Career | 6 | 0.53M |
 
 ## Topic mix of the last 15 episodes
 
+- FO593 · **Politics & Governance** · What's Next For The World: Heatwaves, Water Crisis & Pollution | Sunita Narain
 - FO592 · **Business & Startups** · How To Find Business Ideas, Identify Market Gaps & Make Money | Udit Chawla
 - FO591 · **Money & Investing** · How Shadow Economy Shapes Trade, Politics, Money & Power | Mariana Van Zeller
 - FO590 · **Health & Fitness** · Top Psychiatrist: What Makes a Criminal Brain Different? | Dr. Daniel Amen
@@ -78,4 +79,3 @@ Model settings: 65% recent trend (half-life 40 episodes), 0% what usually follow
 - FO581 · **Geopolitics & Defence** · Inside America's Most Secret Base | Aircraft, Testing, Secrecy  | Annie Jacobsen
 - FO580 · **Politics & Governance** · Why India Is Becoming Unliveable: Heat, Climate Change & AC Trap | Arunabha Ghosh
 - FO579 · **Geopolitics & Defence** · Ex Navy SEAL Who Killed Osama Bin Laden On The Raid & Fear | Robert J. O’Neill
-- FO578 · **Psychology & Self-Growth** · How To Build An Unbreakable Mind & Push Beyond Your Limits | Ayyoub El Osrouti

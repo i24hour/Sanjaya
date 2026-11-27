@@ -1,28 +1,28 @@
 {
-  "next_episode": 593,
-  "based_on_episodes": 566,
+  "next_episode": 594,
+  "based_on_episodes": 567,
   "episodes_with_transcript": 553,
   "model": {
-    "recent_weight": 0.65,
+    "recent_weight": 0.5,
     "markov_weight": 0.0,
     "half_life_episodes": 40
   },
   "backtest": {
     "test_episodes": 120,
     "model": {
-      "top1": 0.14166666666666666,
-      "top3": 0.38333333333333336,
-      "logloss": 2.3849317371035688
+      "top1": 0.13333333333333333,
+      "top3": 0.4,
+      "logloss": 2.3952067225809346
     },
     "baselines": {
       "Always the most common topic so far": {
-        "top1": 0.1,
-        "top3": 0.4166666666666667,
-        "logloss": 2.414811966945472
+        "top1": 0.09166666666666666,
+        "top3": 0.4083333333333333,
+        "logloss": 2.4256341769822294
       },
       "Same topic as last episode": {
         "top1": 0.09166666666666666,
-        "top3": 0.31666666666666665,
+        "top3": 0.30833333333333335,
         "logloss": 4.431001839765793
       },
       "Random guess": {
@@ -35,66 +35,66 @@
   "probabilities": [
     {
       "topic": "Psychology & Self-Growth",
-      "p": 0.194
+      "p": 0.1831
     },
     {
       "topic": "Business & Startups",
-      "p": 0.1346
+      "p": 0.1443
     },
     {
       "topic": "Health & Fitness",
-      "p": 0.1221
+      "p": 0.1255
     },
     {
       "topic": "Money & Investing",
-      "p": 0.1187
+      "p": 0.1185
     },
     {
       "topic": "Geopolitics & Defence",
-      "p": 0.1078
-    },
-    {
-      "topic": "Tech & AI",
-      "p": 0.0695
+      "p": 0.1001
     },
     {
       "topic": "Politics & Governance",
-      "p": 0.0622
+      "p": 0.0685
+    },
+    {
+      "topic": "Tech & AI",
+      "p": 0.0639
     },
     {
       "topic": "Entertainment & Celebrities",
-      "p": 0.0548
-    },
-    {
-      "topic": "Crime & Dark Side",
-      "p": 0.0378
+      "p": 0.0613
     },
     {
       "topic": "Education & Career",
-      "p": 0.0367
+      "p": 0.0379
+    },
+    {
+      "topic": "Crime & Dark Side",
+      "p": 0.0379
     },
     {
       "topic": "Sports",
-      "p": 0.0327
+      "p": 0.0329
     },
     {
       "topic": "Spirituality & Mysteries",
-      "p": 0.0142
+      "p": 0.0124
     },
     {
       "topic": "History & Culture",
-      "p": 0.0095
+      "p": 0.0089
     },
     {
       "topic": "Other",
-      "p": 0.0056
+      "p": 0.0047
     }
   ],
   "trend_last50_vs_prior100": [
     {
       "topic": "Psychology & Self-Growth",
-      "recent_share": 0.3,
-      "prior_share": 0.14
+      "recent_share": 0.28,
+      "prior_share": 0.15
     },
     {
       "topic": "Geopolitics & Defence",
@@ -112,19 +112,24 @@
       "prior_share": 0.02
     },
     {
+      "topic": "Politics & Governance",
+      "recent_share": 0.08,
+      "prior_share": 0.07
+    },
+    {
       "topic": "Business & Startups",
       "recent_share": 0.12,
       "prior_share": 0.12
     },
     {
+      "topic": "Tech & AI",
+      "recent_share": 0.08,
+      "prior_share": 0.08
+    },
+    {
       "topic": "Other",
       "recent_share": 0.0,
       "prior_share": 0.0
-    },
-    {
-      "topic": "Tech & AI",
-      "recent_share": 0.08,
-      "prior_share": 0.09
     },
     {
       "topic": "Sports",
@@ -135,11 +140,6 @@
       "topic": "History & Culture",
       "recent_share": 0.0,
       "prior_share": 0.01
-    },
-    {
-      "topic": "Politics & Governance",
-      "recent_share": 0.06,
-      "prior_share": 0.07
     },
     {
       "topic": "Education & Career",
